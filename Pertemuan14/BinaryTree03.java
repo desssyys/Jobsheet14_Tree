@@ -177,7 +177,7 @@ public class BinaryTree03 {
             }
         }
     }
-    // Versi rekursif untuk menambahkan node
+    // modifikasi no 1 tugas menambahkan node dengan cara rekursif
     public void addRekursif(Mahasiswa03 mahasiswa) {
         root = addRekursif(root, mahasiswa);
     }
@@ -194,6 +194,7 @@ public class BinaryTree03 {
         return current;
     }
 
+    //modifikasi no 2 tugas
     public void cariMinIPK() {
         if (isEmpty()) {
             System.out.println("Tree kosong");
@@ -206,6 +207,7 @@ public class BinaryTree03 {
         current.mahasiswa.tampilInformasi();
     }
 
+    //modifikasi no 2 tugas
     public void cariMaxIPK() {
         if (isEmpty()) {
             System.out.println("Tree kosong");
@@ -218,10 +220,12 @@ public class BinaryTree03 {
         current.mahasiswa.tampilInformasi();
     }
 
+    //modifikasi no 3 tugas
     public void tampilMahasiswaIPKdiAtas(double ipkBatas) {
         tampilMahasiswaIPKdiAtas(root, ipkBatas);
     }
 
+    // modifikasi no 3 tugas
     private void tampilMahasiswaIPKdiAtas(Node03 node, double ipkBatas) {
         if (node != null) {
             tampilMahasiswaIPKdiAtas(node.left, ipkBatas);
