@@ -23,3 +23,4 @@ public class Mahasiswa03 {
                           "IPK: " + this.ipk);
     }
 }
+
